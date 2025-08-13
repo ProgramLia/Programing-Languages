@@ -1,0 +1,3 @@
+export default function NavLink({href, text, isActive}) {
+     return <a href={href} className={`${isActive ? "text-indigo-400 relative p-3 before:absolute before:bottom-0 before:left-0 before:border-b-2 before:content-[''] before:border-indigo-400 before:h-full before:w-full before:scale-x-75 duration-200" : "hover:text-indigo-400 text-indigo-100 relative p-3 before:absolute before:bottom-0 before:left-0 before:border-b-2 before:content-[''] before:border-indigo-400 before:h-full before:w-full before:scale-x-0 hover:before:scale-x-75 before:duration-200"}`}>{text}</a>
+}
