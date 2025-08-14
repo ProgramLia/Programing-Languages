@@ -29,15 +29,15 @@ export default function Navbar() {
      }, []);
 
      return (
-          <header className={` z-[999] fixed top-0 left-0 right-0 duration-200 flex justify-between p-4 px-8 items-center ${active ? 'bg-white/30 backdrop-blur-2xl' : 'bg-zinc-900'}`}>
+          <header className={` z-[999] fixed top-0 left-0 right-0 duration-200 flex justify-between p-4 px-8 items-center ${active ? 'backdrop-blur-2xl border-b-1 border-indigo-400' : 'bg-zinc-900'}`}>
                <div>
-                    <h1 className="text-indigo-100 text-2xl font-semibold">Web <span className="text-indigo-400">Portofolio</span>.</h1>
+                    <h1 className="text-indigo-100 text-2xl font-semibold">Mazu<span className="text-indigo-400">mala</span>.</h1>
                </div>
 
                <nav className="">
                     <NavLink text={"home"} href={"#home"} isActive={activeSection === "home"} />
                     <NavLink text={"about"} href={"#about"} isActive={activeSection === "about"}  />
-                    <NavLink text={"projects"} href={"#projects"} isActive={activeSection === "projects"}  />
+                    <NavLink text={"portfolio"} href={"#portfolio"} isActive={activeSection === "portfolio"}  />
                     <NavLink text={"skills"} href={"#skills"} isActive={activeSection === "skills"}  />
                     <NavLink text={"contact"} href={"#contact"} isActive={activeSection === "contact"}  />
                </nav>
